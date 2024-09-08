@@ -1,0 +1,108 @@
+*{
+    font-family: cursive;
+}
+body{
+    box-sizing: border-box;
+    margin: 0%;
+}
+.container{
+    background-color: #d6d6d6;
+    width: 70%;
+    height: 50vh;
+    margin: 20px auto;
+    position: relative;
+}
+.counter{
+    position: absolute;
+    z-index: 999;
+    /* width: 110px; */
+    padding: 5px;
+    /* height: 20px; */
+    background-color: #000000b3;
+    top: 5px;
+    left: 15px;
+    border-radius: 10px;
+    color: white;
+}
+ .buttom{
+    background-color: #d6d6d6;
+    width: 50%;
+   /* padding: 10px; */
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* padding: 0px 10px; */
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.buttom button{
+    padding: 4px 31px;
+    border: none;
+    margin: 8px;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.buttom button:first-child{
+    background-color: #ff6224;
+}
+.buttom button:last-child{
+    background-color: #243aff;
+
+}
+
+.disapled{
+    cursor: not-allowed !important;
+    background-color: #b9b9b9 !important;
+} 
+@media screen and (max-width: 768px) {
+    /* Styles for small screens */
+    .container{
+        width: 100%;
+    }
+    .buttom{
+        width: 100%;
+    }
+  }
+@media screen and (max-width: 482px) {
+    /* Styles for small screens */
+    .container{
+        width: 100%;
+    }
+    .buttom{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+    button{
+        width: 100%;
+    }
+  }
+  .flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .circle{
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 50%;
+  }
+  .active{
+    background-color: #24c1ff ;
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 50%;
+  }
